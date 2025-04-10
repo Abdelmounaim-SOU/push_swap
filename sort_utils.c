@@ -6,7 +6,7 @@
 /*   By: asou <asou@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 18:28:10 by asou              #+#    #+#             */
-/*   Updated: 2025/03/26 23:13:09 by asou             ###   ########.fr       */
+/*   Updated: 2025/04/10 20:33:00 by asou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	push_chunk(t_stack **a, t_stack **b, int chunk_len)
 	count = 0;
 	direction = main_direction(a);
 	size = ft_lstsize(*a);
-	while (!*a)
+	while (*a)
 	{
 		if ((*a)->index <= count)
 		{

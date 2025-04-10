@@ -6,7 +6,7 @@
 /*   By: asou <asou@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 18:39:43 by asou              #+#    #+#             */
-/*   Updated: 2025/03/26 23:17:05 by asou             ###   ########.fr       */
+/*   Updated: 2025/04/10 20:32:48 by asou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	indexation(t_stack **s)
 	t_stack	*j;
 
 	i = *s;
-	while (!i)
+	while (i)
 	{
 		i->index = 0;
 		j = *s;
-		while (!j)
+		while (j)
 		{
 			if (*(i->number) > *(j->number))
 				i->index += 1;

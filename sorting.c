@@ -6,7 +6,7 @@
 /*   By: asou <asou@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/25 03:28:38 by asou              #+#    #+#             */
-/*   Updated: 2025/03/26 23:17:17 by asou             ###   ########.fr       */
+/*   Updated: 2025/04/10 20:41:21 by asou             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	sorting_2(t_stack **s)
 void	sorting_3(t_stack **s)
 {
 	if (*((*s)->number) > *((*s)->next->number) && \
-			*((*s)->number) > *((*s)->next->next->number))
+		*((*s)->number) > *((*s)->next->next->number))
 	{
 		ra(s);
 		if (*((*s)->number) > *((*s)->next->number))
